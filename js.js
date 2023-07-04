@@ -6,5 +6,19 @@ var x2 = parseInt(document.getElementById("x2").value);
 var y2 = parseInt(document.getElementById("y2").value);
 
 r=x1+x2+y1+y2
-document.write("La suma es: "+r);
+alert("La suma es: "+ r);
+}
+
+function calcularLogaritmo() {
+    var x = document.getElementById("numero").value;
+    var logaritmo = Math.log(x);
+    //document.getElementById("resultado").innerHTML = "El logaritmo de " + x + " es " + logaritmo;
+    alert("El logaritmo de "+ x +" es: "+ logaritmo);
+}
+
+function calcularResiduo() {
+    var dividendo = parseInt(document.getElementById("dividendo").value);
+    var divisor = parseInt(document.getElementById("divisor").value);
+    var residuo = dividendo % divisor;
+    alert("El residuo de la división es: " + residuo);
 }
