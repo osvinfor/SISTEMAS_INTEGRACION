@@ -39,3 +39,9 @@ function multiplicacion() {
         var suma = num1 + num2;
         alert('la suma es: '+suma);
     }
+    function resta(){
+        var num1 = parseInt(document.getElementById('a').value);
+        var num2 = parseInt(document.getElementById('b').value);
+        var resta = num1 - num2;
+        alert('la resta es: '+resta);
+    }
