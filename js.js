@@ -45,3 +45,10 @@ function multiplicacion() {
         var resta = num1 - num2;
         alert('la resta es: '+resta);
     }
+
+function division(){
+    var num1 = parseInt(document.getElementById('a').value);
+    var num2 = parseInt(document.getElementById('b').value);
+    var divi = num1 / num2;
+    alert('la division es: '+divi);
+}
