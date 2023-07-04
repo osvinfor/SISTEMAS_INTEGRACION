@@ -52,3 +52,10 @@ function division(){
     var divi = num1 / num2;
     alert('la division es: '+divi);
 }
+
+function potencia(){
+    var num1 = parseInt(document.getElementById('a').value);
+    var num2 = parseInt(document.getElementById('b').value);
+    var potencia = (num1**num2);
+    alert('la potencia de ' +num1+ ' es: '+potencia);
+}
