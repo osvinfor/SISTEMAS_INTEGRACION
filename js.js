@@ -33,3 +33,9 @@ function multiplicacion() {
     r=x1*x2*y1*y2
     alert("La multiplicacion es: "+ r);
     }
+    function sumar(){
+        var num1 = parseInt(document.getElementById('a').value);
+        var num2 = parseInt(document.getElementById('b').value);
+        var suma = num1 + num2;
+        alert('la suma es: '+suma);
+    }
