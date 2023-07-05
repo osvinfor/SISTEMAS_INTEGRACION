@@ -1,4 +1,4 @@
-function dibujarYCalcularDistancia() {
+﻿function dibujarYCalcularDistancia() {
 
 var x1 = parseInt(document.getElementById("x1").value);
 var y1 = parseInt(document.getElementById("y1").value);
@@ -6,56 +6,27 @@ var x2 = parseInt(document.getElementById("x2").value);
 var y2 = parseInt(document.getElementById("y2").value);
 
 r=x1+x2+y1+y2
-alert("La suma es: "+ r);
+document.write("La suma es: "+r);
 }
 
-function calcularLogaritmo() {
-    var x = document.getElementById("numero").value;
-    var logaritmo = Math.log(x);
-    //document.getElementById("resultado").innerHTML = "El logaritmo de " + x + " es " + logaritmo;
-    alert("El logaritmo de "+ x +" es: "+ logaritmo);
+// Función del boton 10 Gema Jácome
+//Esta funcion realiza la serie de Fibonacci
+function fibonacci(n) {
+    var a = 0, b = 1, c;
+    var result = [a, b];
+    for (var i = 2; i < n; i++) {
+        c = a + b;
+        result.push(c);
+        a = b;
+        b = c;
+    }
+return result;
 }
-
-function calcularResiduo() {
-    var dividendo = parseInt(document.getElementById("dividendo").value);
-    var divisor = parseInt(document.getElementById("divisor").value);
-    var residuo = dividendo % divisor;
-    alert("El residuo de la división es: " + residuo);
+// Función para mostrar los números de la serie en la página web
+function mostrarFibonacci() {
+    var n = document.getElementById("numero").value;
+    var resultado = fibonacci(n);
+    //document.getElementById("resultado").innerHTML = resultado.join(", ");
+    alert("resultado: "+resultado.join(", "));
 }
-
-function multiplicacion() {
-
-    var x1 = parseInt(document.getElementById("x1").value);
-    var y1 = parseInt(document.getElementById("y1").value);
-    var x2 = parseInt(document.getElementById("x2").value);
-    var y2 = parseInt(document.getElementById("y2").value);
     
-    r=x1*x2*y1*y2
-    alert("La multiplicacion es: "+ r);
-    }
-    function sumar(){
-        var num1 = parseInt(document.getElementById('a').value);
-        var num2 = parseInt(document.getElementById('b').value);
-        var suma = num1 + num2;
-        alert('la suma es: '+suma);
-    }
-    function resta(){
-        var num1 = parseInt(document.getElementById('a').value);
-        var num2 = parseInt(document.getElementById('b').value);
-        var resta = num1 - num2;
-        alert('la resta es: '+resta);
-    }
-
-function division(){
-    var num1 = parseInt(document.getElementById('a').value);
-    var num2 = parseInt(document.getElementById('b').value);
-    var divi = num1 / num2;
-    alert('la division es: '+divi);
-}
-
-function potencia(){
-    var num1 = parseInt(document.getElementById('a').value);
-    var num2 = parseInt(document.getElementById('b').value);
-    var potencia = (num1**num2);
-    alert('la potencia de ' +num1+ ' es: '+potencia);
-}
