@@ -29,4 +29,8 @@ function mostrarFibonacci() {
     //document.getElementById("resultado").innerHTML = resultado.join(", ");
     alert("resultado: "+resultado.join(", "));
 }
-    
+function raizcua(){
+    var num1 = parseInt(document.getElementById('a').value);
+    var raizc = (num1**0.5);
+    alert('la raiz de ' +num1+ ' es: '+raizc);
+} 
