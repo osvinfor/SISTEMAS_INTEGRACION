@@ -34,3 +34,17 @@ function raizcua(){
     var raizc = (num1**0.5);
     alert('la raiz de ' +num1+ ' es: '+raizc);
 } 
+
+//Funcion Andrea
+function operacion16()
+{
+    document.getElementById("res").innerHTML = boton16();
+}
+function boton16()
+{
+    //Esta es una operacion
+
+    a=27
+    r=a**(0.3333333333333333)
+    alert ("la raiz cubica de " +a+ " es: " + r)
+}
