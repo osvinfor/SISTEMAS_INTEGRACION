@@ -61,3 +61,15 @@ function boton15()
     r=a%b
     alert ("Hola, el residuo de la division"+a+" es: " + r)
 }
+function operacion17()
+{
+    document.getElementById("res").innerHTML = "La raiz es: " + boton17();
+}
+function boton17()
+{
+    //Esta es una operacion
+    a=9
+    b=3
+    r=a**b
+    alert ("Hola, la potencia de 9^3 es: " + r)
+}
