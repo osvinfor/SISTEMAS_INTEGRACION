@@ -48,3 +48,16 @@ function boton16()
     r=a**(0.3333333333333333)
     alert ("la raiz cubica de " +a+ " es: " + r)
 }
+
+function operacion15()
+{
+    document.getElementById("res").innerHTML = "La raiz es: " + boton15();
+}
+function boton15()
+{
+    //Esta es una operacion
+    a=49
+    b=7
+    r=a%b
+    alert ("Hola, el residuo de la division es: " + r)
+}
