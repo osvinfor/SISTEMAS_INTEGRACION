@@ -73,3 +73,15 @@ function boton17()
     r=a**b
     alert ("Hola, la potencia de 9^3 es: " + r)
 }
+function operacion20()
+{
+    document.getElementById("res").innerHTML = "La raiz es: " + boton20();
+}
+function boton20()
+{
+    //Esta es una operacion
+    a=(9/3)
+    b=(6/2)
+    r=a/b
+    alert ("Hola, El resultado de la fracción es: " + r)
+}
