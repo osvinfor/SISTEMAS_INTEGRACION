@@ -59,5 +59,5 @@ function boton15()
     a=49
     b=7
     r=a%b
-    alert ("Hola, el residuo de la division es: " + r)
+    alert ("Hola, el residuo de la division"+a+" es: " + r)
 }
